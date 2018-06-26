@@ -142,7 +142,7 @@ class ArticleList extends Component {
                         articles[key].comments == 1 && (
                           <span className="right one">
                             {" "}
-                            {articles[key].comments} messages{" "}
+                            {articles[key].comments} message{" "}
                           </span>
                         ),
                         /* S'il n'y a pas de commentaire */
@@ -160,6 +160,7 @@ class ArticleList extends Component {
                       </p>
                       <br />
                       {users.hasOwnProperty(articles[key].user) && (
+                      <div>
                         <p>
                           Créé par{" "}
                           <strong>{users[articles[key].user].username}</strong>{" "}
@@ -168,6 +169,9 @@ class ArticleList extends Component {
                             {moment(articles[key].date).format("Do MMMM YYYY")}
                           </strong>
                         </p>
+                        <p className="breveDescription" > <strong>Brève description : </strong> {" "} {articles[key].description} </p>
+                      </div>
+                        
                       )}
                     </Card>
                   </Col>

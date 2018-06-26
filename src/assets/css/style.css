@@ -538,3 +538,11 @@ iframe.contactCard{
     margin-top: 0.5rem;
 }
 
+.breveDescription{
+    height: 2.8rem;
+    margin-top: 0.5rem !important;
+    max-height: 2.8rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #346d82 !important;
+}
